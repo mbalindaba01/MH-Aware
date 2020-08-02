@@ -6,6 +6,7 @@ import { PersonalDev } from './PersonalDev';
 import { Wellness } from './Wellness';
 import { NoMatch } from './NoMatch';
 import { Navigation } from './components/Navigation';
+import Organise  from './Organise';
 import './App.css';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
               <Route path="/tips" component={HealthTips} />
               <Route path="/dev" component={PersonalDev} />
               <Route path="/resource" component={Wellness} />
+              <Route path="/Organise" component={Organise} />
               <Route component={NoMatch} />
             </Switch>
         </Router>

@@ -53,15 +53,9 @@ export const Organisers = () => (
 
         <Container fluid>
         <div className="column">
-        <Link to='./Organise' className="organise">
-            <img src={img1} alt="Notebook"/>
-            <div className="caption">
-                <h4>Journal Your Thoughts</h4>
-                <p>This is space for your thoughts and feelings</p>
-            </div>
-        </Link>
+        
 
-        <Link to='./diary' className="organise">
+        <Link to='./Organise' className="organise">
             <img src={img2} alt="books"/>
             <div className="caption">
                 <h4>Declutter your mind</h4>

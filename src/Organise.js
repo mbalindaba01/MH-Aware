@@ -3,23 +3,17 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Layout/Header';
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
-import About from './components/pages/About';
-import { v1 as uuid } from 'uuid';
 import axios from 'axios';
 
 
 import './App.css';
 
-class App extends Component {
+class Organise extends Component {
   state = {
     todos: []
   };
 
-  componentDidMount() {
-    axios
-      .get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-      .then(res => this.setState({ todos: res.data }));
-  }
+  
 
   // Toggle Complete
   markComplete = id => {
@@ -50,7 +44,6 @@ class App extends Component {
         completed: false
       })
       .then(res => {
-        res.data.id = uuid.v4();
         this.setState({ todos: [...this.state.todos, res.data] });
       });
   };
@@ -75,7 +68,6 @@ class App extends Component {
                 </React.Fragment>
               )}
             />
-            <Route path="/about" component={About} />
           </div>
         </div>
       </Router>
@@ -83,4 +75,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Organise;
