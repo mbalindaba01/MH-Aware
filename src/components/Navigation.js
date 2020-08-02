@@ -34,17 +34,17 @@ export const Navigation = () => (
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">Health Tips</Link>
+              <Link to="/tips">Health Tips</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/contact">Personal Development</Link>
+              <Link to="/dev">Personal Dev</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link>
-              <Link to="/contact">Wellness Resources</Link>
+              <Link to="/resource">Wellness Resources</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>

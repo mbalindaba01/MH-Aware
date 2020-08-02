@@ -1,19 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HashRouter, Link } from 'react-router-dom';
-import { Carousel, Container, Jumbotron, Row, Col} from 'react-bootstrap';
-import img1 from './assets/img1.jpg';
-import img2 from './assets/img2.jpg';
-import img3 from './assets/img3.jpg';
-import img4 from './assets/img4.jpg';
-import img5 from './assets/img5.jpg';
+import { Carousel, Container, Row, Col} from 'react-bootstrap';
+import img66 from './assets/img66.jpg';
+import img22 from './assets/img22.jpg';
+import img11 from './assets/img11.png';
+import img33 from './assets/img33.jpg';
+import img55 from './assets/img55.png';
 import { FooterPage } from './components/FooterPage.js';
 import { SideBar } from './components/SideBar.js';
+import { Jumbotron } from 'react-bootstrap';
  
 const Styles = styled.div`
 h1, h2, h3, h4, h5, h6 {
     color: #140e00;
     font-size: 5vw;
+}
+
+Carousel.Caption {
+    color: crimson;
+    z-index: 7;
 }
 main {
     display: flex;
@@ -32,24 +38,14 @@ main {
 
   .overlay {
       background: black;
-      opacity: 0.6;
+      opacity: 0.8;
       position: absolute;
+      max-width: 100%;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       z-index: -1;
-  }
-
-  #jumbo {
-      height: 20vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: center;
-      padding-top: 5px;
-      background: #cc8f00;
-      width: 100vw;
   }
 
   .lead{
@@ -63,11 +59,20 @@ main {
       height: 350px;
   }
 
-  #play {
-      height: 400px;
-      width: 100vh;
+  #info {
+      margin-top: 50 px;
   }
 
+  #jumbo {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding-top: 5px;
+    background: #cc8f00;
+    width: 100vw;
+}
 
 `;
 export const Home = () => (
@@ -89,61 +94,37 @@ export const Home = () => (
                     <Carousel.Item className="carousel-itemm">
                         <img
                         className="d-block w-100"
-                        src={img1}
+                        src={img66}
                         alt="First slide"
                         />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={img2}
+                        src={img22}
                         alt="Second slide"
                         />
-
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={img3}
+                        src={img11}
                         alt="Fourth slide"
                         />
-
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={img4}
+                        src={img33}
                         alt="Fifth slide"
                         />
-
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
-                        src={img5}
+                        src={img55}
                         alt="Third slide"
                         />
-
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
                 </Col>
@@ -152,9 +133,23 @@ export const Home = () => (
                 </Col>
                 </Row>
                 </Container>
-
+                <Container id="info">
+                    <Row>
+                        <Col md={4}>
+                            <h3>Column1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend augue eros, id varius felis rhoncus eu. Etiam placerat massa quis dolor imperdiet sodales. Praesent sollicitudin laoreet ornare. Aliquam erat volutpat. Sed scelerisque viverra turpis, nec malesuada nunc sollicitudin in. Praesent eget iaculis risus. Ut dignissim sodales ante. Vivamus at erat nec arcu porta tincidunt et porta mi.</p>
+                        </Col>
+                        <Col md={4}>
+                            <h3>Column2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend augue eros, id varius felis rhoncus eu. Etiam placerat massa quis dolor imperdiet sodales. Praesent sollicitudin laoreet ornare. Aliquam erat volutpat. Sed scelerisque viverra turpis, nec malesuada nunc sollicitudin in. Praesent eget iaculis risus. Ut dignissim sodales ante. Vivamus at erat nec arcu porta tincidunt et porta mi.</p>
+                        </Col>
+                        <Col md={4}>
+                            <h3>Column3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend augue eros, id varius felis rhoncus eu. Etiam placerat massa quis dolor imperdiet sodales. Praesent sollicitudin laoreet ornare. Aliquam erat volutpat. Sed scelerisque viverra turpis, nec malesuada nunc sollicitudin in. Praesent eget iaculis risus. Ut dignissim sodales ante. Vivamus at erat nec arcu porta tincidunt et porta mi.</p>
+                        </Col>
+                    </Row>
+                </Container>
             </main>
-            <div id="play"></div>
             <FooterPage />
         </HashRouter>
     </Styles>

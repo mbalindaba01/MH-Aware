@@ -35,7 +35,7 @@ const Styles = styled.div`
 export const SideBar = () => (
     <Styles>
         <Container id="container">
-        <hr id="top"/>             
+                    
         <div id="social-links">
             <a href="https://twitter.com/treat_zim" target="_blank" rel="noopener noreferrer"><i className="fa fa-twitter"></i></a>
             <a href="https://www.facebook.com/treatZim" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook"></i></a>
